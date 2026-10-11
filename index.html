@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voidbound: The Starfall Ledger</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="hud">
+      <div class="brand">VOIDBOUND</div>
+      <div class="status-row">
+        <span>Captain: <strong id="captain-name">Astra Vale</strong></span>
+        <span>Sector: <strong id="sector-name">The Black Veil</strong></span>
+        <span>Hull: <strong id="hull">100</strong>%</span>
+      </div>
+    </div>
+
+    <main class="game-shell">
+      <aside class="panel left-panel">
+        <h2>Character</h2>
+        <div class="stat-list" id="stat-list"></div>
+        <div class="xp-box">
+          <div class="xp-head">
+            <span>Level</span>
+            <strong id="level">1</strong>
+          </div>
+          <div class="xp-bar">
+            <div id="xp-fill"></div>
+          </div>
+          <small id="xp-text">0 / 100 XP</small>
+        </div>
+      </aside>
+
+      <section class="panel narrative-panel">
+        <div class="chapter-banner" id="chapter-banner">Chapter I — Driftwake</div>
+        <div class="story-box">
+          <p id="story-text"></p>
+        </div>
+
+        <div class="choice-box">
+          <h3>Available actions</h3>
+          <div id="choices"></div>
+        </div>
+
+        <div class="log-box">
+          <h3>Mission Log</h3>
+          <ul id="log"></ul>
+        </div>
+      </section>
+
+      <aside class="panel right-panel">
+        <h2>Ship Systems</h2>
+        <ul id="inventory" class="inventory"></ul>
+        <div class="event-box">
+          <h3>Current Threat</h3>
+          <p id="threat-text"></p>
+        </div>
+      </aside>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
